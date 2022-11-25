@@ -1,0 +1,252 @@
+*{
+    padding:0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+#header{
+    width: 100%;
+    height: 100px;
+    background-color: bisque;
+    padding: 10px;
+  /*  color: white;  */
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    /*  text-align: center;
+    line-height: 100px;   */
+    /*position: fixed;*/
+}
+
+#logo{
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#logo:hover{
+    background-color: aqua;
+    color: blueviolet;
+}
+
+nav a{
+    background-color: bisque;
+    padding: 10px 40px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    background-color: white;
+    color: bisque;
+}
+
+.fa-telegram{
+    color: blue;
+    font-size: 50px;
+    position: fixed;
+    top: 300px;
+    right: 20px;
+}
+
+.fa{
+    color: blue;
+    font-size: 50px;
+    position: fixed;
+    top: 300px;
+    right: 20px;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 100vh;
+    background-image: url(image.jpeg);
+    /* background-image: linear-gradient(pink, blue, puple); */
+}
+
+
+#Sec-1{
+    display: flex;                      /*this will valid on parent part only :: this help to make the square from vertical to horizontal row */
+    justify-content: space-evenly;     /* this will help to make our circles equal from all the side */
+}
+
+#Sec-1 .Circles{
+    width: 250px;
+    height: 250px;
+    background-color: blueviolet;
+    border-radius: 50%;             /* it will make the sqaure boxes into circle */
+    margin: 20px;                   /* margin helps ud to give space between two things */
+    display: flex;                  /* this will also help in to make the content to be flexible */
+    justify-content: center;        /* this will make all the element at the center */
+    align-items: center;            /* this help in to move the content at the centre */ 
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h2{
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 30px;
+}
+
+#sec-2 main{
+    width: 50%;
+    height: 500px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+}
+
+aside{
+    width: 50%;
+    height: 500px;  
+}
+
+#sec-2{
+    display: flex;
+}
+
+aside .art{
+    width: 100%;
+    height: 150px;
+    background-color: orange;
+    margin-bottom:  24px;
+    margin-left: 15px;
+}
+
+.art{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#sec-3 .box{
+    width: 20%;
+    height: 200px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-left: -10px;
+    border-radius: 10px;
+}
+
+#sec-3{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 200px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (min-width:500px) and (max-width:900px){
+    
+    #header{
+        width: 100%;
+        height: 200px;
+    }
+
+    #header nav ul a{
+        display: block;
+    }
+
+    #sec-2{
+        display: block;
+    }
+
+    #sec-2 main{
+        width: 100%;
+        height: 600px;
+    }
+
+    #sec-2 aside{
+        width: 100%;
+        height: 150px;
+        margin-left: -15px;
+    }
+
+    #section-3{
+        margin-top: 400px;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:500px){
+
+    #header{
+        width: 100%;
+        height: 200px;
+    }
+
+    #header nav ul a{
+        display: block;
+    }
+
+    #sec-2{
+        display: block;
+    }
+
+    #sec-2 main{
+        width: 100%;
+        height: 600px;
+    }
+
+    #sec-2 aside{
+        width: 100%;
+        height: 150px;
+        margin-left: -15px;
+    }
+
+    #section-3{
+        margin-top: 400px;
+    }
+
+    #sec-3{
+        display: block;
+        margin-bottom: 250px;
+    }
+
+    #sec-3 .box{
+        width: 100%;
+        height: 200px;
+    }
+
+    #Sec-1{
+        display: block;
+        margin-left: 40px;
+    }
+
+}
